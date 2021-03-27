@@ -1,4 +1,4 @@
-# WEB for study Japanese
+# WEB for studying Japanese
 ## Giới thiệu
 
 Nhằm phục vụ cho lớp học Tiếng Nhật, chia sẻ kiến thức thêm ngoài những giờ học trên lớp.
