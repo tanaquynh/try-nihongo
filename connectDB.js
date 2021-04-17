@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Web học tiếng Nhật - HQH</title>
-    </head>
+var mysql = require('mysql');
 
-    <body>
-        
-    </body>
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Ann@naan0812"
+});
 
-</html>
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    con.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("Result: " + result);
+    });
+  });
