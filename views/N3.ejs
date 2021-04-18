@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web học tiếng Nhật - HQH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+        
+        .affix-top {
+            position: static;
+            top: -35px;
+        }
+        
+        .carousel-inner img {
+            width: 50%;
+            /* Set width to 100% */
+            margin: auto;
+        }
+        
+        .carousel-caption h3 {
+            color: #FFF
+        }
+        
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+                /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+        }
+        /* Add a dark background color with a little bit see-through */
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: #FFBDBD;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        /* Add a gray color to all navbar links */
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #000 !important;
+        }
+        /* On hover, the links will turn white */
+        
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+        /* The active link */
+        
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+        /* Remove border color from the collapsible button */
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+        /* Dropdown */
+        
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #FF7D7D !important;
+        }
+        /* Dropdown links */
+        
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        /* On hover, the dropdown links will turn red */
+        
+        .dropdown-menu li a:hover {
+            background-color: #FF8484 !important;
+        }
+        
+        section .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        section .title h2 {
+            color: #ec5c5c;
+            font-weight: 400;
+        }
+        
+        .menu {
+            margin-top: 50px;
+        }
+        
+        .menu .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .menu .content .box {
+            width: 340px;
+            margin-top: 20px;
+            border: 15px solid #fff;
+            box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+        }
+        
+        .menu .content .box:hover {
+            background-color: #ffaeac;
+        }
+        
+        .menu .content .box .imgBx {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        
+        .menu .content .box .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .menu .content .box .text {
+            padding: 15px 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .menu .content .box .text a {
+            font-weight: 400;
+            color: #111;
+        }
+        
+        section .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .btn input {
+            border: none;
+            border-radius: 0;
+            font-size: 1em;
+            color: #fff;
+            background: #ee8484;
+            display: inline-block;
+            padding: 10px 30px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color:#F2B3BF">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost:3000/dangky"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+            <li><a href="http://localhost:3000/dangnhap"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="5">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost:3000/trangchu">TRANG CHỦ</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/cackhoahoc">CÁC KHÓA HỌC
+                    <span class="caret"></span>
+                  </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:3000/cackhoahoc/N5">N5</a></li>
+                            <li><a href="http://localhost:3000/cackhoahoc/N4">N4</a></li>
+                            <li><a href="http://localhost:3000/cackhoahoc/N3">N3</a></li>
+                            <li><a href="http://localhost:3000/cackhoahoc/N2">N2</a></li>
+                            <li><a href="http://localhost:3000/cackhoahoc/N1">N1</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/bangchucai">BẢNG CHỮ CÁI
+                    <span class="caret"></span>
+                  </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://localhost:3000/bangchucai/hiragana">Hiragana</a></li>
+                            <li><a href="http://localhost:3000/bangchucai/katakana">Katakana</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#tailieu">TÀI LIỆU</a></li>
+
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Noi dung khoa hoc</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="bunpo.jpg">
+                </div>
+                <div class="text">
+                    <a href="#">Ngu phap</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="choukai.jpg">
+                </div>
+                <div class="text">
+                    <a href="#">Luyen nghe</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="kotoba.jpg">
+                </div>
+                <div class="text">
+                    <a href="#">Tu vung</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="n5kanji1.jpg">
+                </div>
+                <div class="text">
+                    <a href="#">Kanji (Han tu)</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="btap.jpg">
+                </div>
+                <div class="text">
+                    <a href="#">Luyen tap</a>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="btn">
+            <input type="button" value="Tham gia">
+        </div>
+    </section>
+
+</body>
+
+</html>
