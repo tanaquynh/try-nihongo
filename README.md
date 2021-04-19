@@ -17,4 +17,4 @@ Các công nghệ sử dụng:
 - Boostrap
 
 ## ER for Database
-![ERD](https://github.com/tanaquynh/try-nihongo/blob/main/public/erd1.png)
+![ERD](https://github.com/tanaquynh/try-nihongo/blob/main/public/ERD2.png)
