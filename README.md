@@ -18,3 +18,5 @@ Các công nghệ sử dụng:
 
 ## ER for Database
 ![ERD](https://github.com/tanaquynh/try-nihongo/blob/main/public/er.png)
+## Mapping From ER
+![.](https://github.com/tanaquynh/try-nihongo/blob/main/public/mapping.png)
