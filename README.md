@@ -20,3 +20,5 @@ Các công nghệ sử dụng:
 ![ERD](https://github.com/tanaquynh/try-nihongo/blob/main/public/er.png)
 ## Mapping From ER
 ![.](https://github.com/tanaquynh/try-nihongo/blob/main/public/mapping.png)
+
+![.](https://github.com/tanaquynh/try-nihongo/blob/main/public/err.png)
